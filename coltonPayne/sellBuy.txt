@@ -1,0 +1,2227 @@
+// This is stupid inefficient
+	/*public void buyAssetAI() {
+
+		switch (sellID) {
+		case 1:
+
+			System.out.println("A sold Asset");
+
+			a.setAssetsAI(a.getAssetsAI() - 1);
+			System.out.println("A Assets: " + a.getAssetsAI());
+			a.setJewelsAI(a.getJewelsAI() + lowSell);
+			System.out.println("A Jewels: " + a.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 2:
+
+			System.out.println("B sold Asset");
+
+			b.setAssetsAI(b.getAssetsAI() - 1);
+			System.out.println("B assets: " + b.getAssetsAI());
+			b.setJewelsAI(b.getJewelsAI() + lowSell);
+			System.out.println("B Jewels: " + b.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 3:
+
+			System.out.println("C sold Asset");
+
+			c.setAssetsAI(c.getAssetsAI() - 1);
+			System.out.println("C assets: " + c.getAssetsAI());
+			c.setJewelsAI(c.getJewelsAI() + lowSell);
+			System.out.println("C Jewels: " + c.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 4:
+
+			System.out.println("D sold Asset");
+
+			d.setAssetsAI(d.getAssetsAI() - 1);
+			System.out.println("D assets: " + d.getAssetsAI());
+			d.setJewelsAI(d.getJewelsAI() + lowSell);
+			System.out.println("D Jewels: " + d.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 5:
+
+			System.out.println("E sold Asset");
+
+			e.setAssetsAI(e.getAssetsAI() - 1);
+			System.out.println("E assets: " + e.getAssetsAI());
+			e.setJewelsAI(e.getJewelsAI() + lowSell);
+			System.out.println("E Jewels: " + e.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 6:
+
+			System.out.println("F sold Asset");
+
+			f.setAssetsAI(f.getAssetsAI() - 1);
+			System.out.println("F assets: " + f.getAssetsAI());
+			f.setJewelsAI(f.getJewelsAI() + lowSell);
+			System.out.println("F Jewels: " + f.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 7:
+
+			System.out.println("G sold Asset");
+
+			g.setAssetsAI(g.getAssetsAI() - 1);
+			System.out.println("G assets: " + g.getAssetsAI());
+			g.setJewelsAI(g.getJewelsAI() + lowSell);
+			System.out.println("G Jewels: " + g.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 8:
+
+			System.out.println("H sold Asset");
+
+			h.setAssetsAI(h.getAssetsAI() - 1);
+			System.out.println("H assets: " + h.getAssetsAI());
+			h.setJewelsAI(h.getJewelsAI() + lowSell);
+			System.out.println("H Jewels: " + h.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+			break;
+
+		case 9:
+
+			System.out.println("I sold Asset");
+
+			i.setAssetsAI(i.getAssetsAI() - 1);
+			System.out.println("I assets: " + i.getAssetsAI());
+			i.setJewelsAI(i.getJewelsAI() + lowSell);
+			System.out.println("I Jewels: " + i.getJewelsAI());
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+			
+		case 10:
+			System.out.println("Player sold Asset");
+
+			player.setAssets(player.getAssets() - 1);
+			System.out.println("Player assets: " + player.getAssets());
+			player.setJewels(player.getJewels() + lowSell);
+			System.out.println("Player Jewels: " + player.getJewels());
+			
+			console.append("Player sold an asset to the CPU." );
+
+			switch (buyID) {
+			case 1:
+				// TODO It doesn't make sense for an AI to buy from its self.
+
+				System.out.println("A Bought Asset. ");
+				a.setAssetsAI(a.getAssetsAI() + 1);
+				System.out.println("A Assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() - lowSell);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+
+				System.out.println("B Bought Asset. ");
+				b.setAssetsAI(b.getAssetsAI() + 1);
+				System.out.println("B Assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() - lowSell);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				c.setAssetsAI(c.getAssetsAI() + 1);
+				System.out.println("C Assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() - lowSell);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				d.setAssetsAI(d.getAssetsAI() + 1);
+				System.out.println("D Assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() - lowSell);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				e.setAssetsAI(e.getAssetsAI() + 1);
+				System.out.println("E Assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() - lowSell);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				f.setAssetsAI(f.getAssetsAI() + 1);
+				System.out.println("F Assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() - lowSell);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				g.setAssetsAI(g.getAssetsAI() + 1);
+				System.out.println("G Assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() - lowSell);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				h.setAssetsAI(h.getAssetsAI() + 1);
+				System.out.println("H Assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() - lowSell);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				i.setAssetsAI(i.getAssetsAI() + 1);
+				System.out.println("I Assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() - lowSell);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				player.setAssets(player.getAssets() + 1);
+				System.out.println("Player Assets: " + player.getAssets());
+				player.setJewels(player.getJewels() - lowSell);
+				System.out.println("Player Jewels: " + player.getJewels());
+				
+				console.append("A computer purchased your asset for " + lowSell);
+
+			default:
+				System.out.println("Invalid buyer.");
+				break;
+
+			}
+
+		default:
+			System.out.println("Invalid Seller");
+
+		}
+	} */
+
+	/*
+	public void sellAssetAI() {
+		switch (buyID) {
+		case 1:
+			System.out.println("A bought the asset");
+			a.setAssetsAI(a.getAssetsAI() + 1);
+			System.out.println("A Assets: " + a.getAssetsAI());
+			a.setJewelsAI(a.getJewelsAI() - highBuy);
+			System.out.println("A Jewels: " + a.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 2:
+			System.out.println("B bought the asset");
+			b.setAssetsAI(b.getAssetsAI() + 1);
+			System.out.println("B Assets: " + b.getAssetsAI());
+			b.setJewelsAI(b.getJewelsAI() - highBuy);
+			System.out.println("B Jewels: " + b.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 3:
+			System.out.println("C bought the asset");
+			c.setAssetsAI(c.getAssetsAI() + 1);
+			System.out.println("C Assets: " + c.getAssetsAI());
+			c.setJewelsAI(c.getJewelsAI() - highBuy);
+			System.out.println("C Jewels: " + c.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+			break;
+
+		case 4:
+			System.out.println("D bought the asset");
+			d.setAssetsAI(d.getAssetsAI() + 1);
+			System.out.println("D Assets: " + d.getAssetsAI());
+			d.setJewelsAI(d.getJewelsAI() - highBuy);
+			System.out.println("D Jewels: " + d.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 5:
+			System.out.println("E bought the asset");
+			e.setAssetsAI(e.getAssetsAI() + 1);
+			System.out.println("E Assets: " + e.getAssetsAI());
+			e.setJewelsAI(e.getJewelsAI() - highBuy);
+			System.out.println("E Jewels: " + e.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 6:
+			System.out.println("F bought the asset");
+			f.setAssetsAI(f.getAssetsAI() + 1);
+			System.out.println("F Assets: " + f.getAssetsAI());
+			f.setJewelsAI(f.getJewelsAI() - highBuy);
+			System.out.println("F jewels: " + f.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 7:
+			System.out.println("G bought the asset");
+			g.setAssetsAI(g.getAssetsAI() + 1);
+			System.out.println("G Assets: " + g.getAssetsAI());
+			g.setJewelsAI(g.getJewelsAI() - highBuy);
+			System.out.println("G Jewels: " + g.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 8:
+			System.out.println("H bought the asset");
+			h.setAssetsAI(h.getAssetsAI() + 1);
+			System.out.println("H Assets: " + h.getAssetsAI());
+			h.setJewelsAI(h.getJewelsAI() - highBuy);
+			System.out.println("H Jewels: " + h.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		case 9:
+			System.out.println("I bought the asset");
+			i.setAssetsAI(i.getAssetsAI() + 1);
+			System.out.println("I Assets: " + i.getAssetsAI());
+			i.setJewelsAI(i.getJewelsAI() - highBuy);
+			System.out.println("I Jewels: " + i.getJewelsAI());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+			
+		case 10:
+			System.out.println("Player bought the asset");
+			player.setAssets(player.getAssets() + 1);
+			System.out.println("Player Assets: " + player.getAssets());
+			player.setJewels(player.getJewels() - highBuy);
+			System.out.println("Player Jewels: " + player.getJewels());
+
+			switch (sellID) {
+			case 1:
+				System.out.println("A sold the asset.");
+
+				a.setAssetsAI(a.getAssetsAI() - 1);
+				System.out.println("A assets: " + a.getAssetsAI());
+				a.setJewelsAI(a.getJewelsAI() + highBuy);
+				System.out.println("A Jewels: " + a.getJewelsAI());
+
+				break;
+
+			case 2:
+				System.out.println("B sold the asset.");
+
+				b.setAssetsAI(b.getAssetsAI() - 1);
+				System.out.println("B assets: " + b.getAssetsAI());
+				b.setJewelsAI(b.getJewelsAI() + highBuy);
+				System.out.println("B Jewels: " + b.getJewelsAI());
+
+				break;
+
+			case 3:
+				System.out.println("C sold the asset.");
+
+				c.setAssetsAI(c.getAssetsAI() - 1);
+				System.out.println("C assets: " + c.getAssetsAI());
+				c.setJewelsAI(c.getJewelsAI() + highBuy);
+				System.out.println("C Jewels: " + c.getJewelsAI());
+
+				break;
+
+			case 4:
+				System.out.println("D sold the asset.");
+
+				d.setAssetsAI(d.getAssetsAI() - 1);
+				System.out.println("D assets: " + d.getAssetsAI());
+				d.setJewelsAI(d.getJewelsAI() + highBuy);
+				System.out.println("D Jewels: " + d.getJewelsAI());
+
+				break;
+
+			case 5:
+				System.out.println("E sold the asset.");
+
+				e.setAssetsAI(e.getAssetsAI() - 1);
+				System.out.println("E assets: " + e.getAssetsAI());
+				e.setJewelsAI(e.getJewelsAI() + highBuy);
+				System.out.println("E Jewels: " + e.getJewelsAI());
+
+				break;
+
+			case 6:
+				System.out.println("F sold the asset.");
+
+				f.setAssetsAI(f.getAssetsAI() - 1);
+				System.out.println("F assets: " + f.getAssetsAI());
+				f.setJewelsAI(f.getJewelsAI() + highBuy);
+				System.out.println("F Jewels: " + f.getJewelsAI());
+
+				break;
+
+			case 7:
+				System.out.println("G sold the asset.");
+
+				g.setAssetsAI(g.getAssetsAI() - 1);
+				System.out.println("G assets: " + g.getAssetsAI());
+				g.setJewelsAI(g.getJewelsAI() + highBuy);
+				System.out.println("G Jewels: " + g.getJewelsAI());
+
+				break;
+
+			case 8:
+				System.out.println("H sold the asset.");
+
+				h.setAssetsAI(h.getAssetsAI() - 1);
+				System.out.println("H assets: " + h.getAssetsAI());
+				h.setJewelsAI(h.getJewelsAI() + highBuy);
+				System.out.println("H Jewels: " + h.getJewelsAI());
+
+				break;
+
+			case 9:
+				System.out.println("I sold the asset.");
+
+				i.setAssetsAI(i.getAssetsAI() - 1);
+				System.out.println("I assets: " + i.getAssetsAI());
+				i.setJewelsAI(i.getJewelsAI() + highBuy);
+				System.out.println("I Jewels: " + i.getJewelsAI());
+
+				break;
+				
+			case 10:
+				System.out.println("Player sold the asset.");
+
+				player.setAssets(player.getAssets() - 1);
+				System.out.println("Player assets: " + player.getAssets());
+				player.setJewels(player.getJewels() + highBuy);
+				System.out.println("Plyer Jewels: " + player.getJewels());
+				
+				console.append("Player sold asset to the AI." );
+
+				break;
+				
+			default:
+				System.out.println("Invalid seller.");
+				break;
+
+			}
+
+			break;
+
+		default:
+			System.out.println("Invalid Buyer");
+			break;
+
+		}
+	} */
+
+}
